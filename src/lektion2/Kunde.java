@@ -21,6 +21,23 @@ public class Kunde {
 		this.geschlecht = geschlecht;
 	}
 
+	public boolean equals(Object obj) {
+		if (obj == null)
+			return false;
+		if (!(obj instanceof Kunde))
+			return false;
+		Kunde that = (Kunde) obj;
+		if (!(this.getName().equals(that.getName())))
+			return false;
+		if (!(this.getVorname().equals(that.getVorname())))
+			return false;
+		if(!(this.getAlter()==that.getAlter()))
+			return false;
+		if (!(this.geschlecht==that.geschlecht))
+			return false;
+		return true;
+	}
+
 	public String getName() {
 		return name;
 	}

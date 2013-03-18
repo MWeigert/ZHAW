@@ -39,7 +39,7 @@
 
 ## Pflichtaufgabe Java Programmer Zertifizierung - Teil3 
 
-1. Schreiben Sie ein kleines Programm, in dem Sie die unterschiedlichen loop-Konstrukte auf ihre Funftionsfähigkeit hin
+1. Schreiben Sie ein kleines Programm, in dem Sie die unterschiedlichen loop-Konstrukte auf ihre Funktionsfähigkeit hin
 	überprüfen.
  
 2. Schreiben Sie ein kleines Programm, in dem Sie drei Klassen mit beliebigen Datenfeldern implementieren, 2 der Klassen

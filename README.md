@@ -75,3 +75,80 @@
 
 4. Implementieren Sie drei verschiedene Exceptions, die Vererbungsbeziehungen zueinander haben. Zeigen Sie in Ihrer Anwendung,
 	dass eine überschriebene Methode nur gerade die Exceptions werfen kann, die die Originalmethode wirft.
+	
+## Pflichtaufgabe Java Programmer Zertifizierung - Teil5 
+
+1. Schreiben Sie ein kleines Programm, in dem Sie eine eigene enum-Klasse implementieren. Erproben Sie an Ihrem Programm
+	die verschiedenen Möglichkeiten von Enums gemäss Vorlesungsunterlagen.
+
+2. Schreiben Sie ein kleines Programm, in dem Sie das Singleton Design Pattern implementieren. Testen Sie ihr Singleton
+	auf korrekte Funktionsweise.
+
+3. Schreiben Sie ein kleines Programm, in dem Sie das DAO Design Pattern implementieren. Als Datasource können Sie gerne
+	Dummydaten oder aber auch eine Datenbank verwenden.
+
+4. Schreiben Sie ein kleines Programm, in dem Sie eine eigene Factory implementieren. Testen Sie ihre Factory auf korrekte
+	Funktionsweise.
+
+## Pflichtaufgabe Java Programmer Zertifizierung - Teil6
+
+1. Schreiben Sie ein kleines Programm, in dem Sie eine eigene generische Stack-Klasse mit den Methoden push() und pop()
+	implementieren, in der Sie Objekte vom Typ Student(ein Student hat einen Namen und eine Matrikelnummer) auf dem Stack
+	ablegen und vom Stack holen. Geben Sie nach jeder Operation den Inhalt des Stacks aus. Implementieren Sie die
+	Stack-Klasse als eigene generische Klasse.
+
+2. Schreiben Sie ein kleines Programm, in dem Sie eine eigene generische Klasse implementieren. Experimentieren Sie mit
+	mehreren Typ-Variablen, Typ-Variablen mit Einschränkungen, Parametrisierten Typen und Interfaces mit Typ-Variablen
+	gemäss Vorlesungsunterlagen.
+
+3. Schreiben Sie ein kleines Programm, in dem Sie eine eigene nicht-generische Klasse implementieren. Implementieren Sie
+	in dieser Klasse generische Methoden und experimentieren Sie mit diesen generischen Methoden gemäss
+	Vorlesungsunterlagen.
+
+4. Schreiben Sie ein kleines Programm, in dem Sie die Technik des Auto/Unboxing untersuchen gemäss Vorlesungsunterlagen.
+
+5. Schreiben Sie ein kleines Programm, in dem Sie die verschiedenen Collectionarten (Set, List, Map) mit ihren Klassen auf ihre Funktionsweisen hin untersuchen.
+
+## Pflichtaufgabe Java Programmer Zertifizierung - Teil7
+
+1. Schreiben Sie ein kleines Programm, in dem Sie reguläre Expressions verarbeiten mit der Pattern- und der Matcher-Klasse
+	gemäss Vorlesungsunterlagen.
+
+2. Schreiben Sie ein kleines Programm, in dem Sie die Ausgabe von formatierten Strings über die format()-Methode bzw.
+	printf()-Methode, sowie die Formatierung von numerischem Output über die DecimalFormat Klasse gemäss
+	Vorlesungsunterlagen üben.
+
+3. Schreiben Sie ein kleines Programm, in dem Sie das try-with-ressources-Statement sowie die Implementierung von
+	Assertions üben gemäss Vorlesungsunterlagen.
+
+4. Schreiben Sie ein kleines Programm, in dem Sie die Streamklassen im java.io Paket sowie die Klassen im  java.nio.file
+	auf ihre Funktionalität hin untersuchen gemäss Vorlesungsunterlagen.
+
+## Pflichtaufgabe Java Programmer Zertifizierung - Teil8
+
+1. Schreiben Sie ein kleines Programm :
+	Untersuchen der Path Klasse im nio Paket ( Path erzeugen, Path Informationen abfragen, 2 Paths zusammenführen über die
+	resolve() Methode, 2 Paths vergleichen).
+	Untersuchen der Files Klasse im nio Paket ( File Zugriff überprüfen, File Location in verschiedenen Paths überprüfen,
+	File/Directory löschen/kopieren/versetzen, Metadaten abfragen).
+	Untersuchen der PathMatcher Klasse  im nio Paket (Files finden über die unterschiedlichen Glob Patterns gemäss
+	Vorlesungsunterlagen).
+
+2. Schreiben Sie ein kleines Programm, in dem Sie das JDBC API benutzen um auf eine Datenbank zuzugreifen gemäss
+	Vorlesungsunterlagen.
+
+3. Schreiben Sie ein kleines Programm, in dem Sie einen Thread starten, der Thread soll eine einfache Nachricht über
+	die Standardausgabe ausgeben.
+	Implementieren Sie Ihre Thread-Klasse auf 2 verschiedene Arten.
+
+4. Schreiben Sie ein kleines Programm, in dem Sie eine Synchronisation mit Reihenfolge über die Methoden wait() und
+	notify() durchführen.
+	Es soll eine Queue zum Austausch von Zeichen zwischen Threads entwickelt werden, benutzen Sie als Datenstruktur für
+	die Queue einen Array der Grösse 50.
+	Implementieren Sie zum Lesen aus der Queue eine read-Methode, zum Schreiben aus der Queue eine write-Methode.
+	Wenn die Queue voll ist, dann soll der schreibende Thread solange gestoppt werden, bis wieder Platz in der Queue ist,
+	falls der lesende Thread versucht, aus einer leeren Queue zu lesen, so soll dieser gestoppt und in den Wartezustand
+	versetzt werden.
+	Verwenden Sie hierzu die Methoden wait() und notify(), implementieren Sie eine entsprechende Testklasse zum Testen der
+	Anwendung.
+	

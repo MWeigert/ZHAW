@@ -18,10 +18,12 @@ import javafx.scene.control.Label;
 public class Afg14Listener implements EventHandler<ActionEvent> {
 
 	Label label;
+	Label aufgabe;
 
-	public Afg14Listener(Label label) {
+	public Afg14Listener(Label label, Label aufgabe) {
 		super();
 		this.label = label;
+		this.aufgabe = aufgabe;
 	}
 
 	@Override
@@ -73,5 +75,11 @@ public class Afg14Listener implements EventHandler<ActionEvent> {
 		info += "Laufzeit StringBuffer: " + lz + " Millisekunden";
 
 		label.setText(info);
+		aufgabe.setText("Schreiben Sie ein kleines Programm bestehend aus einer Klasse, definieren Sie in der Klasse\n"
+				+ "ein Datenfeld vom Typ StringBuilder und ein Datenfeld vom Typ String. Überprüfen Sie in\nIhrer "
+				+ "Anwendung die Funktionsweise der Methoden der Klassen StringBuilder und String.\nFühren Sie in einem "
+				+ "Loop Konkatenierungs-Operationen aus für StringBuilder und String\nund vergleichen Sie die Performance "
+				+ "der beiden Klassen.");
 	}
+
 }

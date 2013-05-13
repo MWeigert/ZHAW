@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 public class Hausaufgaben extends Application {
 
 	Label label;
+	Label aufgabe;
 
 	/**
 	 * @param args
@@ -30,16 +31,19 @@ public class Hausaufgaben extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
 		label = new Label();
+		aufgabe = new Label();
 
 		BorderPane border = new BorderPane();
 
-		border.setTop(new MainMenu(label).getMainMenu());
+		border.setTop(new MainMenu(label, aufgabe).getMainMenu());
 		border.setCenter(label);
+		border.setBottom(aufgabe);
 
 		Scene scene = new Scene(border);
 
 		primaryStage.setTitle("Java Zertifizierung - Vertiefungskurs");
 		primaryStage.setScene(scene);
+		primaryStage.setHeight(600);
 		primaryStage.show();
 	}
 

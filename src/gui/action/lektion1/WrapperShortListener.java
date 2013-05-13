@@ -15,10 +15,12 @@ import javafx.scene.control.Label;
 public class WrapperShortListener implements EventHandler<ActionEvent> {
 
 	Label label;
+	Label aufgabe;
 
-	public WrapperShortListener(Label label) {
+	public WrapperShortListener(Label label, Label aufgabe) {
 		super();
 		this.label = label;
+		this.aufgabe = aufgabe;
 	}
 
 	@Override
@@ -52,6 +54,14 @@ public class WrapperShortListener implements EventHandler<ActionEvent> {
 		info += "Type: " + Short.TYPE;
 
 		label.setText(info);
+		aufgabe = this.setAufgabe(aufgabe);
+	}
+
+	public Label setAufgabe(Label aufgabe) {
+		aufgabe.setText("Schreiben Sie ein kleines Programm bestehend aus einer Klasse, definieren Sie in der Klasse\n"
+				+ "verschiedene Datenfelder vom Typ der numerischen Wrapper Klassen. Überprüfen Sie in\nIhrer Anwendung die "
+				+ "Funktionsweise der Methoden der numerischen Wrapper Klassen.");
+		return aufgabe;
 	}
 
 }

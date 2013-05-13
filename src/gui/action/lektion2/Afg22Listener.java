@@ -16,10 +16,12 @@ import lektion2.Kunde;
 public class Afg22Listener implements EventHandler<ActionEvent> {
 
 	Label label;
+	Label aufgabe;
 
-	public Afg22Listener(Label label) {
+	public Afg22Listener(Label label, Label aufgabe) {
 		super();
 		this.label = label;
+		this.aufgabe = aufgabe;
 	}
 
 	@Override
@@ -57,5 +59,8 @@ public class Afg22Listener implements EventHandler<ActionEvent> {
 		info += "Kunde 3 equal Kunde 2: " + kunde3.equals(kunde2);
 
 		label.setText(info);
+		aufgabe.setText("Schreiben Sie ein kleines Programm, in dem Sie eine Klasse Kunde mit einigen Datenfeldern\n" +
+				"definieren. Überschreiben Sie die equals()-Methode für die Klasse Kunde dahin, dass Objekte\nder " +
+				"Klasse Kunde auf Gleichheit der Datenfelder überprüft werden.");
 	}
 }

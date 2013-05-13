@@ -14,10 +14,12 @@ import javafx.scene.control.Label;
 public class Afg23Listener implements EventHandler<ActionEvent> {
 
 	Label label;
+	Label aufgabe;
 
-	public Afg23Listener(Label label) {
+	public Afg23Listener(Label label, Label aufgabe) {
 		super();
 		this.label = label;
+		this.aufgabe = aufgabe;
 	}
 
 	@Override
@@ -56,6 +58,8 @@ public class Afg23Listener implements EventHandler<ActionEvent> {
 		info += "Element 5: " + boolArray2[5] + "\n";
 
 		label.setText(info);
+		aufgabe.setText("Schreiben Sie ein kleines Programm, in dem Sie einen zweidimensionalen Array definieren,\n" +
+				"erzeugen und initialisieren, initialisieren Sie den Array auf zwei verschiedene Arten.");
 	}
 
 }

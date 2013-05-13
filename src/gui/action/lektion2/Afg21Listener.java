@@ -14,10 +14,12 @@ import javafx.scene.control.Label;
 public class Afg21Listener implements EventHandler<ActionEvent> {
 
 	Label label;
+	Label aufgabe;
 
-	public Afg21Listener(Label label) {
+	public Afg21Listener(Label label, Label aufgabe) {
 		super();
 		this.label = label;
+		this.aufgabe = aufgabe;
 	}
 
 	@Override
@@ -57,5 +59,7 @@ public class Afg21Listener implements EventHandler<ActionEvent> {
 		info += "********************************************************"
 				+ "\n";
 		label.setText(info);
+		aufgabe.setText("Schreiben Sie ein kleines Programm, in dem Sie die Java Operatoren <<, >>, >>>, ^, & und\n" +
+				"| auf ihre Funktionalität testen.");
 	}
 }

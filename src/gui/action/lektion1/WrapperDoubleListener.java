@@ -15,10 +15,12 @@ import javafx.scene.control.Label;
 public class WrapperDoubleListener implements EventHandler<ActionEvent> {
 
 	Label label;
+	Label aufgabe;
 
-	public WrapperDoubleListener(Label label) {
+	public WrapperDoubleListener(Label label, Label aufgabe) {
 		super();
 		this.label = label;
+		this.aufgabe=aufgabe;
 	}
 
 	@Override
@@ -66,6 +68,14 @@ public class WrapperDoubleListener implements EventHandler<ActionEvent> {
 		info += "Type: " + Double.TYPE;
 
 		label.setText(info);
+		aufgabe=this.setAufgabe(aufgabe);
+	}
+	
+	public Label setAufgabe(Label aufgabe) {
+		aufgabe.setText("Schreiben Sie ein kleines Programm bestehend aus einer Klasse, definieren Sie in der Klasse\n"
+				+ "verschiedene Datenfelder vom Typ der numerischen Wrapper Klassen. Überprüfen Sie in\nIhrer Anwendung die "
+				+ "Funktionsweise der Methoden der numerischen Wrapper Klassen.");
+		return aufgabe;
 	}
 
 }

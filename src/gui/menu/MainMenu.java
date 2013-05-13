@@ -29,53 +29,53 @@ public class MainMenu {
 
 	MenuBar menu;
 
-	public MainMenu(Label label) {
+	public MainMenu(Label label, Label aufgabe) {
 		menu = new MenuBar();
 
 		Menu lektion1Menu = new Menu("Lektion 1");
 
 		Menu aufgabe13 = new Menu("Aufgabe 3");
 		MenuItem byteSub = new MenuItem("Byte");
-		byteSub.setOnAction(new WrapperByteListener(label));
+		byteSub.setOnAction(new WrapperByteListener(label, aufgabe));
 		MenuItem shortSub = new MenuItem("Short");
-		shortSub.setOnAction(new WrapperShortListener(label));
+		shortSub.setOnAction(new WrapperShortListener(label, aufgabe));
 		MenuItem integerSub = new MenuItem("Integer");
-		integerSub.setOnAction(new WrapperIntegerListener(label));
+		integerSub.setOnAction(new WrapperIntegerListener(label, aufgabe));
 		MenuItem longSub = new MenuItem("Long");
-		longSub.setOnAction(new WrapperLongListener(label));
+		longSub.setOnAction(new WrapperLongListener(label, aufgabe));
 		MenuItem doubleSub = new MenuItem("Double");
-		doubleSub.setOnAction(new WrapperDoubleListener(label));
+		doubleSub.setOnAction(new WrapperDoubleListener(label, aufgabe));
 		MenuItem floatSub = new MenuItem("Float");
-		floatSub.setOnAction(new WrapperFloatListener(label));
+		floatSub.setOnAction(new WrapperFloatListener(label, aufgabe));
 		MenuItem booleanSub = new MenuItem("Boolean");
-		booleanSub.setOnAction(new WrapperBooleanListener(label));
+		booleanSub.setOnAction(new WrapperBooleanListener(label, aufgabe));
 
 		aufgabe13.getItems().addAll(byteSub, shortSub, integerSub, longSub,
 				doubleSub, floatSub, booleanSub);
 
 		MenuItem aufgabe14 = new MenuItem("Aufgabe 4");
-		aufgabe14.setOnAction(new Afg14Listener(label));
+		aufgabe14.setOnAction(new Afg14Listener(label, aufgabe));
 
 		lektion1Menu.getItems().addAll(aufgabe13, aufgabe14);
 
 		Menu lektion2Menu = new Menu("Lektion 2");
 
 		MenuItem aufgabe21 = new MenuItem("Aufgabe 1");
-		aufgabe21.setOnAction(new Afg21Listener(label));
+		aufgabe21.setOnAction(new Afg21Listener(label, aufgabe));
 		MenuItem aufgabe22 = new MenuItem("Aufgabe 2");
-		aufgabe22.setOnAction(new Afg22Listener(label));
+		aufgabe22.setOnAction(new Afg22Listener(label, aufgabe));
 		MenuItem aufgabe23 = new MenuItem("Aufgabe 3");
-		aufgabe23.setOnAction(new Afg23Listener(label));
+		aufgabe23.setOnAction(new Afg23Listener(label, aufgabe));
 
 		lektion2Menu.getItems().addAll(aufgabe21, aufgabe22, aufgabe23);
 
 		Menu lektion3Menu = new Menu("Lektion 3");
-		
+
 		MenuItem aufgabe31 = new MenuItem("Aufgabe 1");
 		aufgabe31.setOnAction(new Afg31Listener(label));
-		
+
 		lektion3Menu.getItems().addAll(aufgabe31);
-		
+
 		Menu lektion4Menu = new Menu("Lektion 4");
 		Menu lektion5Menu = new Menu("Lektion 5");
 		Menu lektion6Menu = new Menu("Lektion 6");
@@ -83,7 +83,7 @@ public class MainMenu {
 		Menu lektion8Menu = new Menu("Lektion 8");
 
 		MenuItem aufgabe81 = new MenuItem("Aufgabe 1");
-		aufgabe81.setOnAction(new Afg81Listener(label));
+		aufgabe81.setOnAction(new Afg81Listener(label, aufgabe));
 
 		lektion8Menu.getItems().addAll(aufgabe81);
 

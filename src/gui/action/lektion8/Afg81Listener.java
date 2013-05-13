@@ -25,10 +25,12 @@ import javafx.stage.FileChooser;
 public class Afg81Listener implements EventHandler<ActionEvent> {
 
 	Label label = new Label();
+	Label aufgabe = new Label();
 
-	public Afg81Listener(Label label) {
+	public Afg81Listener(Label label, Label aufgabe) {
 		super();
 		this.label = label;
+		this.aufgabe = aufgabe;
 	}
 
 	@Override
@@ -58,5 +60,12 @@ public class Afg81Listener implements EventHandler<ActionEvent> {
 		}
 
 		label.setText(fileInfo);
+		aufgabe.setText("Schreiben Sie ein kleines Programm: Untersuchen der Path Klasse im nio Paket\n" +
+				"( Path erzeugen, Path Informationen abfragen, 2 Paths zusammenführen über die resolve()\n" +
+				"Methode, 2 Paths vergleichen).	Untersuchen der Files Klasse im nio Paket ( File Zugriff\n" +
+				"überprüfen, File Location in verschiedenen Paths überprüfen, File/Directory\n" +
+				"löschen/kopieren/versetzen, Metadaten abfragen). Untersuchen der PathMatcher Klasse\n" +
+				" im nio Paket (Files finden über die unterschiedlichen Glob Patterns gemäss\n" +
+				"Vorlesungsunterlagen).");
 	}
 }

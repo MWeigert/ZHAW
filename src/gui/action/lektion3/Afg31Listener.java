@@ -1,7 +1,7 @@
 /**Schreiben Sie ein kleines Programm, in dem Sie die unterschiedlichen loop-Konstrukte auf
  * ihre Funktionsfähigkeit hin überprüfen.
  */
-package lektion3;
+package gui.action.lektion3;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -14,10 +14,12 @@ import javafx.scene.control.Label;
 public class Afg31Listener implements EventHandler<ActionEvent> {
 
 	Label label;
+	Label aufgabe;
 
-	public Afg31Listener(Label label) {
+	public Afg31Listener(Label label, Label aufgabe) {
 		super();
 		this.label = label;
+		this.aufgabe = aufgabe;
 	}
 
 	@Override
@@ -53,6 +55,8 @@ public class Afg31Listener implements EventHandler<ActionEvent> {
 		info += this.runTimeOutput(start, stop);
 
 		label.setText(info);
+		aufgabe.setText("Schreiben Sie ein kleines Programm, in dem Sie die unterschiedlichen loop-Konstrukte\n" +
+				"auf ihre Funktionsfähigkeit hin überprüfen.");
 	}
 
 	public String runTimeOutput(Long start, Long stop) {

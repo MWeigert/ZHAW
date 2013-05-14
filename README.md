@@ -152,3 +152,21 @@
 	Verwenden Sie hierzu die Methoden wait() und notify(), implementieren Sie eine entsprechende Testklasse zum Testen der
 	Anwendung.
 	
+## Pflichtaufgabe Java Programmer Zertifizierung - Teil9 
+
+1. Schreiben Sie ein kleines Programm in dem Sie die Collection-Klassen BlockingQueue, ConcurrentHashMap und 
+	ConcurrentSkipListMap im Paket java.util.concurrent auf ihre Funktionalität hin überprüfen.
+
+2. Fork/Join Framework:
+	Untersuchen Sie das Programm http://docs.oracle.com/javase/tutorial/essential/concurrency/examples/ForkBlur.java
+	auf seine Funktionalität hin, kompilieren Sie das Programm und führen Sie es aus.
+
+3. Localisation: 
+	Untersuchen Sie die beiden Programme http://docs.oracle.com/javase/tutorial/i18n/resbundle/examples/PropertiesDemo.java 
+	und http://docs.oracle.com/javase/tutorial/i18n/resbundle/examples/RBControl.java  auf ihre Funktionalität hin,
+	kompilieren Sie die beiden Programme und führen Sie sie aus. 
+
+4. Numbers and Currencies :
+	Untersuchen Sie den Sourcecode in den Folien zum Formatieren von Numbers, Currencies, Dates und Times. Kompilieren
+	Sie den Code und führen Sie ihn aus.
+	

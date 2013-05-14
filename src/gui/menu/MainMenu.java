@@ -14,12 +14,12 @@ import gui.action.lektion1.WrapperShortListener;
 import gui.action.lektion2.Afg21Listener;
 import gui.action.lektion2.Afg22Listener;
 import gui.action.lektion2.Afg23Listener;
+import gui.action.lektion3.Afg31Listener;
 import gui.action.lektion8.Afg81Listener;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
-import lektion3.Afg31Listener;
 
 /**
  * @author Mathias Weigert i10b
@@ -72,7 +72,7 @@ public class MainMenu {
 		Menu lektion3Menu = new Menu("Lektion 3");
 
 		MenuItem aufgabe31 = new MenuItem("Aufgabe 1");
-		aufgabe31.setOnAction(new Afg31Listener(label));
+		aufgabe31.setOnAction(new Afg31Listener(label, aufgabe));
 
 		lektion3Menu.getItems().addAll(aufgabe31);
 

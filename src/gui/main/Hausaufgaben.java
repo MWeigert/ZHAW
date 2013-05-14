@@ -3,8 +3,6 @@
  */
 package gui.main;
 
-import javax.swing.GroupLayout.Alignment;
-
 import gui.menu.MainMenu;
 import javafx.application.Application;
 import javafx.scene.Scene;

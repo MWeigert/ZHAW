@@ -11,12 +11,12 @@ import javafx.scene.control.Label;
  * @author Mathias Weigert i10b
  * 
  */
-public class Afg91Listener implements EventHandler<ActionEvent> {
+public class Afg94Listener implements EventHandler<ActionEvent> {
 
 	Label label;
 	Label aufgabe;
 
-	public Afg91Listener(Label label, Label aufgabe) {
+	public Afg94Listener(Label label, Label aufgabe) {
 		super();
 		this.label = label;
 		this.aufgabe = aufgabe;

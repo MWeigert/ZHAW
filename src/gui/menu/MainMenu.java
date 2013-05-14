@@ -16,6 +16,7 @@ import gui.action.lektion2.Afg22Listener;
 import gui.action.lektion2.Afg23Listener;
 import gui.action.lektion3.Afg31Listener;
 import gui.action.lektion8.Afg81Listener;
+import gui.action.lektion9.Afg91Listener;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
@@ -86,10 +87,17 @@ public class MainMenu {
 		aufgabe81.setOnAction(new Afg81Listener(label, aufgabe));
 
 		lektion8Menu.getItems().addAll(aufgabe81);
+		
+		Menu lektion9Menu = new Menu("Lektion 9");
+		
+		MenuItem aufgabe91 = new MenuItem("Aufgabe 1");
+		aufgabe91.setOnAction(new Afg91Listener(label, aufgabe));
 
+		lektion9Menu.getItems().addAll(aufgabe91);
+		
 		menu.getMenus().addAll(lektion1Menu, lektion2Menu, lektion3Menu,
 				lektion4Menu, lektion5Menu, lektion6Menu, lektion7Menu,
-				lektion8Menu);
+				lektion8Menu, lektion9Menu);
 	}
 
 	public MenuBar getMainMenu() {

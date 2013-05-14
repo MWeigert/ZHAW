@@ -3,11 +3,14 @@
  */
 package gui.main;
 
+import javax.swing.GroupLayout.Alignment;
+
 import gui.menu.MainMenu;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 /**
@@ -33,6 +36,8 @@ public class Hausaufgaben extends Application {
 		label = new Label();
 		aufgabe = new Label();
 
+		aufgabe.setTextAlignment(TextAlignment.CENTER);
+		
 		BorderPane border = new BorderPane();
 
 		border.setTop(new MainMenu(label, aufgabe).getMainMenu());
